@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <!--<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />-->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="//cdn.jsdelivr.net/npm/phaser@3.11.0/dist/phaser.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+  <link href="reset.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <title>Eos</title>
+</head>
+
+<body>
+  <header>
+    <h1>Eos</h1>
+    <nav>
+      <a class="currentPage">Play</a>
+      <a>About</a>
+    </nav>
+  </header>
+  <div class="gameconsole">
+    <div id="game"></div>
+    <div class="console">
+      <textarea id="programInput">ship.wake_all()</textarea>
+      <button id="run" onclick="submitCode()">Submit</button>
+      <div id="output"></div>
+    </div>
+  </div>
+  <noscript>You must have JavaScript enabled to play this game</noscript>
+  <script src="phaser.js"></script>
+  <script src="run.js"></script>
+</body>
+
+</html>

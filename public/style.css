@@ -1,0 +1,63 @@
+body {
+  font-family: 'Abel', 'Roboto', sans-serif;
+  background-color: #282828;
+  color: white;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient(  #191970, #8C266B 70%, #ff3366 90%,#fca503);
+  height: 10vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 30vw;
+}
+
+nav > a {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.currentPage {
+  text-decoration: underline;
+}
+
+.gameconsole {
+  display: flex;
+  flex-direction: row;
+}
+
+#game {
+  width: 50vw;
+}
+
+.console {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: monospace;
+}
+
+#programInput {
+  width: 45vw;
+  height: 50vh;
+}
