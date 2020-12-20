@@ -13,6 +13,7 @@ p {
 }
 
 header {
+  font-family: 'Major Mono Display', 'Abel', 'Roboto', sans-serif;;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -50,14 +51,46 @@ nav > a {
 
 .console {
   width: 50vw;
+  height: 75vh;
+  padding: 1vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  font-family: monospace;
+  background-color: black;
+}
+
+#output {
+  font-family: 'VT323', 'Courier New', monospace;
+  width: 90%;
+  height: 30vh;
+  color: #00C49A;
+  overflow-y: auto;
 }
 
 #programInput {
-  width: 45vw;
-  height: 50vh;
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  width: 90%;
+  height: 40vh;
+  color: #CFCFCF;
+  background-color: black;
+  border: 2px solid white;
+  resize: none;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
+  margin: 0.5vw;
+}
+
+.buttons > a {
+  font-family: 'Courier New', monospace;
+  font-size: 1vw;
+  border: 2px solid white;
+  padding: 0.25vw;
+  cursor: pointer;
 }

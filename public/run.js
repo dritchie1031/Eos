@@ -2,6 +2,7 @@ function displayOutput(result) {
   if (result === null) {
     return;
   }
+  clearOutput();
   let output = document.getElementById("output");
   let lines = result.split("\n");
   for (line in lines) {
@@ -9,8 +10,14 @@ function displayOutput(result) {
       continue;
     let newelem = document.createElement("p");
     output.appendChild(newelem);
-    newelem.textContent = lines[line].substring(5, lines[line].length - 1);
-
+    let newstr = lines[line].substring(4);
+    if (newstr.charAt(0) === '"') {
+      newstr = newstr.substring(1);
+    }
+    if (newstr.charAt(newstr.length - 1) === '"') {
+      newstr = newstr.substring(0, newstr.length - 1);
+    }
+    newelem.textContent = newstr;
   }
 }
 
@@ -29,5 +36,15 @@ function submitCode() {
       displayOutput(data.Result);
     }
   }
+}
 
+function clearOutput() {
+  let elem = document.getElementById("output");
+  while (elem.firstChild) {
+    elem.removeChild(elem.firstChild);
+  }
+}
+
+function clearInput() {
+  document.getElementById("programInput").value = "";
 }
