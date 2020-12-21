@@ -5,7 +5,6 @@
   <meta charset="utf-8" />
   <!--<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />-->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <script src="//cdn.jsdelivr.net/npm/phaser@3.11.0/dist/phaser.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
@@ -20,24 +19,26 @@
   <header>
     <h1>eos</h1>
     <nav>
-      <a class="currentPage">play</a>
-      <a href="about.html">about</a>
+      <a href="/">play</a>
+      <a class="currentPage">about</a>
     </nav>
   </header>
-  <div class="gameconsole">
-    <div id="game"></div>
-    <div class="console">
-      <textarea id="programInput">ship.wake_all()</textarea>
-      <div class="buttons">
-        <a onclick="submitCode()">Submit</a>
-        <a onclick="clearInput()">Clear Code</a>
-      </div>
-      <div id="output"></div>
-    </div>
+
+  <div className="aboutCard">
+    <h3>The Project</h3>
+    <p>
+      At a research-focused school like UC Davis, programming knowledge can be extremely
+      helpful to students and researchers. It can be used for data visualization, data analysis, or even
+      just to automate repetetive tasks. However, programming has long been an esoteric field.
+      It seems like there are people with the knowledge, and those without. I firmly believe that
+      there is no more reason for such a gap. I thought of this project as a way to help people
+      learn to code, even if it's been previously inaccessible.
+    </p>
   </div>
-  <noscript>You must have JavaScript enabled to play this game</noscript>
-  <script src="phaser.js"></script>
-  <script src="run.js"></script>
+  <div className="aboutCard">
+    <h3>The Creator</h3>
+    <p>I'm Daniel Ritchie, a senior undergraduate at UC Davis studying </p>
+  </div>
 </body>
 
 </html>
